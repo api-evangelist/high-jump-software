@@ -1,8 +1,27 @@
 aid: high-jump-software
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/high-jump-software.png
 name: High Jump Software
-description: High Jump Software is a company surfaced as a portfolio company of battery-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'HighJump Software was a Minneapolis-based provider of supply chain execution
+  software, best known for its warehouse management system (WMS) and its extensible,
+  configurable architecture for distribution, direct-store-delivery, and manufacturing
+  operations. The company was acquired by Battery Ventures in 2014, expanded through
+  acquisitions (Accellos, Nexus, TrueCommerce lines), then acquired by Körber in 2017
+  and folded into Körber Supply Chain Software. As of 2024 the portfolio was rebranded
+  Infios. The standalone HighJump brand is retired: highjump.com now 301-redirects to
+  infios.com, and the company publishes no public developer portal, API documentation,
+  or machine-readable API specification. This profile is retained as a historical /
+  acquired-company record in the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/high-jump-software/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +29,38 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-successor: infios
+x-acquired-by:
+- battery-ventures
+- korber
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Supply Chain
+- Warehouse Management
+- Logistics
+- Transportation Management
+- Distribution
+- Supply Chain Execution
+- Acquired
 apis: []
+common:
+- type: Website
+  url: https://highjump.com
+  name: HighJump (redirects to Infios)
+- type: DomainSecurity
+  url: security/high-jump-software-domain-security.yml
+  name: Domain Security Probe
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
